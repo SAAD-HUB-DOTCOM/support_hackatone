@@ -1,0 +1,37 @@
+// Karachi Kart help-center articles, indexed into the DNotifier knowledge base by seed.js.
+const help = (recordId, topic, content) => ({
+  recordId,
+  content,
+  metadata: { source: "help-center", topic },
+});
+
+export const faqs = [
+  help("delivery-time", "delivery",
+    "Delivery time: Orders within Karachi are delivered in 1-2 working days. Orders to other cities in Pakistan (Lahore, Islamabad, Rawalpindi, Faisalabad, Multan, Peshawar, Quetta, Hyderabad and others) take 3-5 working days. Remote areas may take up to 7 working days. Orders placed before 2 PM are dispatched the same day."),
+  help("delivery-charges", "delivery",
+    "Delivery charges: Delivery inside Karachi costs Rs. 150. Delivery to other cities costs Rs. 250. Delivery is FREE on all orders above Rs. 3,000 anywhere in Pakistan."),
+  help("cash-on-delivery", "payments",
+    "Cash on Delivery (COD): COD is available across Pakistan for orders up to Rs. 50,000. Orders above Rs. 50,000 must be paid in advance online. Please keep the exact amount ready; riders may not carry change."),
+  help("online-payments", "payments",
+    "Online payments: We accept JazzCash, Easypaisa, Visa and Mastercard debit/credit cards, and direct bank transfer. Card payments are processed securely and you get an instant confirmation SMS and email. Prepaid orders get a 5% discount."),
+  help("return-policy", "returns",
+    "Return policy: You can return most items within 7 days of delivery if they are unused, with original tags and packaging. Undergarments, cosmetics, perfumes and opened food items cannot be returned for hygiene reasons. Start a return from My Orders > Return Item in the app."),
+  help("refund-time", "returns",
+    "Refund time: Once we receive and inspect your returned item, refunds are processed within 5-7 working days. Online payments are refunded to the original method (JazzCash, Easypaisa or card). COD orders are refunded by bank transfer or as Karachi Kart wallet credit."),
+  help("damaged-item", "returns",
+    "Damaged or wrong item: If you receive a damaged, defective or wrong item, report it within 48 hours of delivery from My Orders > Report a Problem with a photo of the item and packaging. We will arrange a free pickup and send a replacement or full refund."),
+  help("order-tracking", "orders",
+    "Order tracking: Track your order anytime from My Orders in the Karachi Kart app or website. You also receive an SMS with the courier tracking number (TCS, Leopards or M&P) as soon as your order is dispatched."),
+  help("order-cancellation", "orders",
+    "Order cancellation: You can cancel an order for free from My Orders > Cancel Order as long as it has not been dispatched. Once an order is dispatched it cannot be cancelled, but you can refuse delivery or return it within 7 days."),
+  help("store-hours", "store",
+    "Store and support hours: The online store is open 24/7. Customer support is available Monday to Saturday, 9 AM to 9 PM (PKT). Our pickup point at Shahrah-e-Faisal, Karachi is open Monday to Saturday, 11 AM to 8 PM. Closed on Sundays and public holidays."),
+  help("electronics-warranty", "warranty",
+    "Warranty on electronics: Mobile phones, laptops and home appliances come with the official brand warranty (usually 12 months) mentioned on the product page. Accessories such as chargers, cables and earphones have a 3-month Karachi Kart replacement warranty. Keep your invoice for warranty claims."),
+  help("contact", "contact",
+    "Contact us: Call our helpline at 021-111-527-527 (021-111-KARACHI), WhatsApp us at 0300-1234567, or email support@karachikart.pk. Support hours are Monday to Saturday, 9 AM to 9 PM."),
+  help("size-exchange", "returns",
+    "Size exchange: Clothing and shoes can be exchanged for a different size within 7 days of delivery, free of charge, if unused with tags attached. Request an exchange from My Orders > Exchange Size. The new size is delivered when the rider collects the old item."),
+  help("account-and-password", "account",
+    "Account and password: You can shop as a guest or create an account with your mobile number. To reset your password tap Login > Forgot Password and enter the OTP sent by SMS."),
+];
